@@ -1,0 +1,90 @@
+html {
+    background-color: #F7F9FA;
+
+}
+
+header img {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 4px;
+    height: 50px;
+    width: 50px;
+    
+}
+
+body {
+    background-color: #F4F9FF;
+
+}
+
+
+header {
+
+    background-color: #ECFCFF;
+    margin: -8px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 0; 
+    height: 60px;
+
+}
+
+header h1 {
+    margin-top: 12px;
+    margin-left: 96px;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-top: -50px;
+    
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 96px;
+
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+
+.search-input{
+    width: 550px;
+    height: 20px;
+}
+
+.search-button{
+    height: 25px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 527px;
+}
+
+.center-main{
+    
+    margin-top: -18px;
+    left: 316px;
+    position: absolute;
+    
+    
+}
+
+.top-container {
+    position: relative; /* Establishes a positioning context for the text */
+    width: 1000px; /* Fixed width prevents movement relative to screen size */
+    height: 500px;
+}
