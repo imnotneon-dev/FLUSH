@@ -1,0 +1,54 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 275px;
+    background-color: #00cfff;
+    display: flex;
+    flex-direction: column;       
+    justify-content: space-between; 
+    align-items: center;                      
+    box-sizing: border-box;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    position: relative; 
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.sidebar-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar-logo {
+    display: flex;
+    width: 100%;
+}
+
+.flush-logo {
+    margin-top: 10px;
+    height: 100px;
+    width: auto;
+}
+
+.flush-icon {
+    height: 275px;
+    margin-bottom: -5px;
+}

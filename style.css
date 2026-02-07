@@ -1,52 +1,20 @@
 html {
-    background-color: #F7F9FA;
-
-}
-
-header img {
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 4px;
-    height: 50px;
-    width: 50px;
-    
-}
-
-body {
-    background-color: #F4F9FF;
-
-}
-
-
-header {
-
-    background-color: #ECFCFF;
-    margin: -8px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    top: 0; 
-    height: 60px;
-
-}
-
-header h1 {
-    margin-top: 12px;
-    margin-left: 96px;
-
+    background-color: #ffffff;
+    font-family: Roboto, Arial;
+    background-image: url('images/Flush_BG.png');
+    background-size: 100% auto;
+    background-repeat: repeat;
 }
 
 nav ul {
     list-style: none;
     text-align: right;
     margin-top: -50px;
-    
-    
 }
 
 nav li {
     display: inline-block;
     margin-right: 96px;
-
 }
 
 .searchbar{
@@ -54,7 +22,6 @@ nav li {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-    
 }
 
 .search-input{
@@ -74,13 +41,10 @@ nav li {
     margin-left: 527px;
 }
 
-.center-main{
-    
+.center-main {
     margin-top: -18px;
     left: 316px;
     position: absolute;
-    
-    
 }
 
 .top-container {
