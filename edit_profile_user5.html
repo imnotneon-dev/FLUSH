@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Flush PH</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="edit_profile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="images/flush_logo.jpg" class="flush-logo">
+            </div>
+
+            <div class="sidebar-bot">
+                <img src="images/Flush_Icon.png" class="toilet">
+                <img id= "pfp" src = "images/user5.jpg">
+                <button id = "change-pfp-btn"> Change Photo </button>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="forms-box">
+                <h2>Edit Profile</h2>
+
+                <form class="edit-form">
+
+                    <div class = "form-row">
+                        <div class = "form-grp">
+                            <h1>First Name</h1>
+                            <input type="text" value="Kevin">
+                        </div>
+
+                        <div class = "form-grp">
+                            <h1>Last Name</h1>
+                            <input type="text" value="Villarico">
+                        </div>
+                    </div>
+                    
+                    <div class = "form-row">
+                        <div class = "form-grp">
+                            <h1>Username</h1>
+                            <input type="text" value="user6767">
+                        </div>
+
+                        <div class = "form-grp">
+                            <h1>Email</h1>
+                            <input type="text" value="user6767@email.com">
+                        </div>
+                    </div>
+
+                    <div class = "form-row">
+                        <div class = "form-grp">
+                            <h1>Password</h1>
+                            <input type="text" placeholder="Enter New Password">
+                        </div>
+
+                        <div class = "form-grp">
+                            <h1>Confirm New Password</h1>
+                            <input type="text" placeholder="Confirm New Password">
+                        </div>
+                    </div>
+
+                    <h1 id = "abt-label">About</h1>
+                    <textarea rows="5" placeholder="About"></textarea>
+                
+                    <div class="form-buttons">
+                        <button type="submit" class="save-btn">Save Changes</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="button" class="home-btn"
+                                onclick="window.location.href='user1.html'">
+                            Back to Home
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+            
+    </body>
+</html>

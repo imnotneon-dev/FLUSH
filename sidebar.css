@@ -1,54 +1,140 @@
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 275px;
-    background-color: #38b6ff;
-    display: flex;
-    flex-direction: column;       
-    justify-content: space-between; 
-    align-items: center;                      
-    box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 275px;
+  background-color: #38b6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .sidebar-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .sidebar-mid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 100%;
-    position: relative; 
-    padding-top: 20px;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .sidebar-bottom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .sidebar-logo {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .flush-logo {
-    margin-top: 10px;
-    height: 100px;
-    width: auto;
+  margin-top: 10px;
+  height: 100px;
+  width: auto;
 }
 
 .flush-icon {
-    height: 275px;
-    margin-bottom: -5px;
+  height: 275px;
+  margin-bottom: -5px;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #38b6ff;
+  height: 460px;
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 100px;
+  transition: all 0.2s ease;
+}
+
+.post-window:hover {
+  transform: scale(105%);
+  color: white;
+}
+
+.post-title-text {
+  margin-top: -220px;
+  margin-bottom: 5px;
+}
+
+.post-title {
+  font-family: Roboto, Arial;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.post-desc-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.post-desc {
+  font-family: Roboto, Arial;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 300px;
+  margin-bottom: -210px;
+}
+
+.post-btn {
+  margin-top: 20px;
+  border-radius: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-width: 2px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 17px;
+  color: #38b6ff;
+  border-color: #38b6ff;
+  outline: none;
+  border-style: solid;
+  transition: all 0.2s ease;
+}
+
+.post-btn:hover {
+  transform: scale(105%);
+  box-shadow:
+    inset 1px 2px 3px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 207, 255, 0.7);
 }

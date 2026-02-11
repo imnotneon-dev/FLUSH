@@ -3,6 +3,19 @@
     width:350px;
 }
 
+.home-btn {
+    background-color: #38b6ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    opacity: 0.8;
+}
+
 #pfp {
     position: absolute;
     top: 30%;
