@@ -135,6 +135,20 @@ border-radius: 45px 45px 0px 0px ;
     box-shadow: 0 8px 20px rgba(78, 115, 223, 0.4);
 }
 
+.backtohome-btn  {
+    width: 110%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5772c0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(78, 115, 223, 0.3);
+}
+
 .login-btn:active {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
@@ -147,6 +161,20 @@ border-radius: 45px 45px 0px 0px ;
     font-weight: bold;
     color: #333;
     letter-spacing: 1px;
+}
+
+.backtohome-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78, 115, 223, 0.4);
+}
+
+.backtohome-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+}
+
+.backtohome-btn {
+    margin-top: 15px;
 }
 
 .welcome-text {

@@ -17,10 +17,36 @@ vertical-align: middle;
 
 }
 
+.backtohome-btn {
+    width: 110%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5772c0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(78, 115, 223, 0.3);
+}
+
+.backtohome-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78, 115, 223, 0.4);
+}
+
+.backtohome-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+}
+
+
 .sign-up-background{
 
 background-color: #84e8ff;
-height: 1120px;
+height: 1200px;
 width: 730px;
 border-radius: 45px;
 
