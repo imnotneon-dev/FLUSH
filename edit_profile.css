@@ -29,6 +29,10 @@
     margin-top: -10%;
 }
 
+.sidebar-top img {
+    margin: -40px;
+}
+
 .sidebar-bot {
     position: relative;
     display: flex;
