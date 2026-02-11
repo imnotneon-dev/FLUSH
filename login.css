@@ -1,0 +1,160 @@
+body{
+    background-image: url(images/Flush_BG.png);
+
+}
+
+.login-container{
+
+margin-top: 74px;
+margin-bottom: 70px;
+
+justify-content: center;
+display: flex;
+align-items: center; 
+vertical-align: middle;
+
+
+
+}
+
+.login-background{
+
+background-color: #84e8ff;
+height: 720px;
+width: 730px;
+border-radius: 45px;
+
+}
+
+
+.login-logo-container{
+
+margin: auto;
+display: grid;
+place-items: center;
+background-color: #38B6FF;
+border-radius: 45px 45px 0px 0px ;
+
+}
+
+.login-logo{
+
+    background-image: url(images/Flush.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    
+
+}
+
+.login-form-container{
+
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
+
+    height: 600px;
+
+}
+
+.login-form{
+
+}
+
+/* Form Group */
+.form-group {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    margin-bottom: -12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    background-color: #f9fafc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus {
+    border-color: #4e73df;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(78, 115, 223, 0.15);
+    outline: none;
+}
+
+/* Remember Me */
+.remember {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 22px;
+    margin-top: -50px;
+    
+    color: #555;
+}
+
+.remember input {
+    margin-right: 8px;
+    accent-color: #4e73df;
+}
+
+/* Login Button */
+.login-btn {
+    width: 110%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4e73df, #2e59d9);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(78, 115, 223, 0.3);
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78, 115, 223, 0.4);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 42px;
+    color: black;
+    font-weight: 100;
+    margin-top: -70px;
+    letter-spacing: 1.2px;
+    font-family: 'Cherry Bomb One', cursive;
+}
