@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+</head>
+
+<link rel="stylesheet" href="sign-up.css">
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
+
+<body>
+    
+    <!-- email, username, first name, last name, password, confirm pass, date of birth,  -->
+
+<div class="sign-up-container">
+
+    <div class="sign-up-background">
+        
+        <div class="sign-up-logo-container">
+            <span class="sign-up-logo"></span>
+        </div>
+
+        <div class="sign-up-form-container">
+
+<form id="signupForm" action="signup.php" method="POST">
+
+    <p class="welcome-text">Welcome to Flush!</p>
+    <h2 class="sign-up-title">Sign Up</h2>
+
+
+    <!-- First Name -->
+    <div class="form-group">
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+        <label for="last-name">Last Name</label><br>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    </div>
+
+    <!-- Username -->
+    <div class="form-group">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Date of Birth -->
+    <div class="form-group">
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-group">
+        <label for="confirm-password">Confirm Password</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+    </div>
+    <br><br><br>
+    <!-- Remember Me / Terms -->
+    <div class="remember">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">I agree to the <span class="terms-link" id="openTerms">Terms & Conditions</span></label>
+    </div>
+
+
+
+    <!-- Sign-Up Button -->
+    <button type="submit" class="sign-up-btn">Sign Up</button>
+
+</form>
+
+
+
+<div id="termsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Terms & Conditions</h3>
+        <p>
+            Terms and Conditions for Flush
+
+<p>Welcome to Flush! By signing up and using our platform, you agree to the following terms and conditions:</p>
+<ul>
+1. **Acceptance of Terms**  
+By accessing and using Flush, you agree to comply with these terms. If you do not agree, please do not use the service.
+<br><br>
+2. **Account Responsibility**  
+You are responsible for maintaining the confidentiality of your account credentials, including your username and password. You agree to notify us immediately of any unauthorized use.
+<br><br>
+3. **User Conduct**  
+You agree not to engage in any harmful or illegal activity on Flush, including but not limited to spamming, posting offensive content, or attempting to breach security.
+<br><br>
+4. **Content Ownership**  
+All content submitted by users remains the property of the user. By submitting content, you grant Flush a non-exclusive license to display and distribute it within the platform.
+<br><br>
+5. **Privacy**  
+We respect your privacy. Personal information collected will be used according to our Privacy Policy and will not be shared with third parties without your consent.
+<br><br>
+6. **Modifications**  
+Flush reserves the right to modify these Terms and Conditions at any time. Users will be notified of significant changes via email or in-app notifications.
+<br><br>
+7. **Termination**  
+Flush may suspend or terminate your account if you violate these Terms or engage in behavior that threatens the integrity or safety of the platform.
+<br><br>
+8. **Limitation of Liability**  
+Flush is provided "as is" without warranties. We are not liable for any damages resulting from the use of the platform.
+<br><br>
+9. **Governing Law**  
+These Terms and Conditions are governed by the laws of Madagascar. Any disputes shall be resolved in accordance with applicable laws.
+
+</ul>
+
+By checking "I agree" and signing up, you acknowledge that you have read, understood, and agree to these Terms and Conditions.
+
+        </p>
+    </div>
+</div>
+<script src="sign-up.js"></script>
+
+
+
+        </div>
+
+
+    </div>
+
+</div>    
+
+</body>
+
+
+
+</html>
