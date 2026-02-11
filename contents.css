@@ -20,10 +20,11 @@
     overflow: hidden; 
     position: relative;
     z-index: 2;
+
+    margin-top: -39px;
 }
 
 .content-left {
-    margin-left: 4px;
     flex: 2; 
     min-width: 0;
     z-index: 2;
@@ -31,6 +32,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0px;
+
+    margin-left: 22px;
+    margin-right: 14px;
 }
 
 .content-right {
@@ -41,7 +45,11 @@
     overflow-y: auto;
 }
 
-.content-left::-webkit-scrollbar {
+.content-left::-webkit-scrollbar{
+    opacity: 0;
+}
+
+/* .content-left::-webkit-scrollbar {
     width: 15px;
 }
 
@@ -56,4 +64,4 @@
 
 .content-left::-webkit-scrollbar-thumb:hover {
     background: #9a9a9a; 
-}
+} */

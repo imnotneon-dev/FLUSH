@@ -72,6 +72,56 @@
     height: 4px; 
 }
 
+
+.poster {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.poster a{
+    text-decoration: none;
+    color: #000000;
+}
+.pfp {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #00cfff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    font-size: 14px;
+}
+
+.username:hover{
+    color: #8cc2ef;
+    text-decoration: underline;
+}
+
+.dot, .timestamp {
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+}
+
+.review-rating{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.upvote-btn, .downvote-btn{
+    border-radius: 15px;
+    background-color: rgb(222, 222, 222);
+    border:none;
+}
+
+.upvote-btn:hover, .downvote-btn:hover {
+    background-color: #c6c6c6;
+}
+
 /* .review-item {
     background-image: 
         repeating-linear-gradient(
@@ -82,3 +132,4 @@
             transparent 3px
         );
 } */
+
