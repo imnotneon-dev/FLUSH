@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flush PH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="edit_profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <!-- <img src="images/flush_logo.jpg" class="flush-logo" alt="Flush Logo"> -->
+       <img id="pfp" src="images/user1.jpg" alt="Profile Photo">
+        <button id="change-pfp-btn">Change Photo</button>
+
+        <div class="sidebar-identity">
+        <span class="sidebar-displayname">Jillianne Leung</span>
+        <span class="sidebar-username">@jillianneleung</span>
+      </div>
+ 
+      <!-- Divider -->
+      <div class="sidebar-rule"></div>
+ 
+      <!-- Stats -->
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-value">67</span>
+          <span class="stat-label">Reviews</span>
+        </div>
+
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-value">6.7</span>
+          <span class="stat-label">Avg Rating</span>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="sidebar-bot">
+      
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-content">
+    <div class="forms-box">
+
+      <!-- Header band -->
+      <div class="forms-box-header">
+        <div class="header-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <h2>Edit Profile</h2>
+      </div>
+
+      <!-- Form body -->
+      <div class="forms-box-body">
+        <form class="edit-form">
+
+          <!-- Personal Info -->
+          <div class="form-section">
+            <p class="section-label">Personal Info</p>
+            <div class="form-row">
+              <div class="form-grp">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter first name">
+                <span class="field-hint"></span>
+              </div>
+              <div class="form-grp">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter last name">
+                <span class="field-hint"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-grp">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <span class="field-hint"></span>
+              </div>
+              <div class="form-grp">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <span class="field-hint"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Passwoed -->
+          <div class="form-section">
+            <p class="section-label">Security</p>
+            <div class="form-row">
+              <div class="form-grp">
+                <label for="password">New Password</label>
+                <input type="password" id="password" placeholder="Enter new password">
+                <span class="field-hint"></span>
+              </div>
+              <div class="form-grp">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm new password">
+                <span class="field-hint"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="form-section">
+            <p class="section-label">About</p>
+            <div class="form-grp full-width">
+              <label for="about">Bio</label>
+              <textarea id="about" rows="4" placeholder="Tell us about yourself..."></textarea>
+              <span class="field-hint"></span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="form-buttons">
+            <button type="submit" class="save-btn">Save Changes</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="button" class="home-btn" onclick="window.location.href='user1.html'">← Back to Home</button>
+          </div>
+
+        </form>
+      </div><!-- /forms-box-body -->
+    </div><!-- /forms-box -->
+  </div><!-- /main-content -->
+
+  <script src="edit_profile.js"></script>
+</body>
+</html>
