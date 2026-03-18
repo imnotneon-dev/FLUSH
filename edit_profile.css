@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 260px;
   height: 100vh;
-  background: linear-gradient(175deg, #3776be 60%, #38B6FF 100%);
+  background-color: #38b6ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,8 +41,8 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.203) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.203) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -131,7 +131,7 @@ body {
 /* Page header band */
 .forms-box-header {
   padding: 32px 40px 28px; 
-  background: linear-gradient(105deg, #3776be 0%, #38B6FF 100%);
+  background-color: #38b6ff;
   display: flex;
   align-items: center;
   gap: 16px;
