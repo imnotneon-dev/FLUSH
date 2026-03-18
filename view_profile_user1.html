@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flush PH — user6767</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="view_profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+
+    <!-- Avatar & identity -->
+    <div class="sb-avatar-wrap">
+      <div class="sb-avatar-ring">
+        <img id="pfp" src="images/user1.jpg" alt="Profile Photo">
+      </div>
+      <p class="sb-name">Juan dela Cruz</p>
+      <p class="sb-handle">@user6767</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="sb-rule"></div>
+
+    <!-- Stats -->
+    <div class="sb-stats">
+      <div class="sb-stat">
+        <span class="sb-stat-val">48</span>
+        <span class="sb-stat-lbl">Reviews</span>
+      </div>
+      <div class="sb-stat-div"></div>
+      <div class="sb-stat">
+        <span class="sb-stat-val">31</span>
+        <span class="sb-stat-lbl">Comments</span>
+      </div>
+      <div class="sb-stat-div"></div>
+      <div class="sb-stat">
+        <span class="sb-stat-val">4.8</span>
+        <span class="sb-stat-lbl">Rating</span>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="sb-rule"></div>
+
+    <!-- Meta info -->
+    <ul class="sb-meta">
+      <li class="sb-meta-item">
+        <span class="sb-meta-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </span>
+        <div>
+          <span class="sb-meta-label">Birthday</span>
+          <span class="sb-meta-val">June 14, 2005</span>
+        </div>
+      </li>
+      <li class="sb-meta-item">
+        <span class="sb-meta-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+        <div>
+          <span class="sb-meta-label">Member since</span>
+          <span class="sb-meta-val">February 2023</span>
+        </div>
+      </li>
+    </ul>
+
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- Bio card -->
+    <section class="bio-card" id="bio-card">
+      <div class="bio-card-label">Bio</div>
+      <p class="bio-text">About user</p>
+    </section>
+
+    <!-- Tab nav -->
+    <nav class="tab-nav" id="tab-nav">
+      <button class="tab-btn active" data-tab="posts">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Posts
+        <span class="tab-count" id="posts-count">2</span>
+      </button>
+      <button class="tab-btn" data-tab="comments">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Comments
+        <span class="tab-count" id="comments-count">2</span>
+      </button>
+      <div class="tab-indicator" id="tab-indicator"></div>
+    </nav>
+
+    <!-- ===== POSTS PANEL ===== -->
+    <section class="tab-panel active" id="panel-posts">
+      <div class="tp-roll">
+
+      <div class="review-card">
+        <div class="rc-header">
+          <img class="rc-avatar" src="images/user1.jpg" alt="">
+          <div class="rc-meta">
+            <a class="rc-username" href="#">user6767</a>
+            <span class="rc-time">2 hours ago</span>
+          </div>
+        </div>
+        <h3 class="rc-title">Post 1</h3>
+        <p class="rc-body">Content of Post 1<p>
+        <div class="rc-footer">
+          <button class="vote-btn upvote">
+            <span>🧼</span>
+            <span class="vote-count">67</span>
+          </button>
+          <button class="vote-btn downvote">
+            <span>💩</span>
+            <span class="vote-count">0</span>
+          </button>
+          <span class="rc-location">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            location
+          </span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="rc-header">
+          <img class="rc-avatar" src="images/user1.jpg" alt="">
+          <div class="rc-meta">
+            <a class="rc-username" href="#">user6767</a>
+            <span class="rc-time">3 days ago</span>
+          </div>
+        </div>
+        <h3 class="rc-title">Post 2</h3>
+        <p class="rc-body">Content of Post 2</p>
+        <div class="rc-footer">
+          <button class="vote-btn upvote">
+            <span>🧼</span>
+            <span class="vote-count">12</span>
+          </button>
+          <button class="vote-btn downvote">
+            <span>💩</span>
+            <span class="vote-count">3</span>
+          </button>
+          <span class="rc-location">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            location
+          </span>
+        </div>
+      </div>
+
+      </div><!-- /tp-roll -->
+    </section>
+
+    <!-- ===== COMMENTS PANEL ===== -->
+    <section class="tab-panel" id="panel-comments">
+      <div class="tp-roll">
+
+      <div class="comment-card">
+        <div class="cc-thread-ref">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Replied on thread: <a href="#" class="cc-thread-link">title of post thread</a>
+        </div>
+        <div class="cc-body">
+          comment 1
+        </div>
+        <div class="cc-footer">
+          <span class="cc-time">1 day ago</span>
+          <div class="cc-votes">
+            <button class="vote-btn upvote sm">
+              <span>🧼</span><span class="vote-count">8</span>
+            </button>
+            <button class="vote-btn downvote sm">
+              <span>💩</span><span class="vote-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-card" >
+        <div class="cc-thread-ref">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Replied on thread: <a href="#" class="cc-thread-link">title of post thread</a>
+        </div>
+        <div class="cc-body">
+          comment 2
+        </div>
+        <div class="cc-footer">
+          <span class="cc-time">5 days ago</span>
+          <div class="cc-votes">
+            <button class="vote-btn upvote sm">
+              <span>🧼</span><span class="vote-count">21</span>
+            </button>
+            <button class="vote-btn downvote sm">
+              <span>💩</span><span class="vote-count">1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      </div><!-- /tp-roll -->
+    </section>
+
+  </main>
+
+  <script src="view_profile.js"></script>
+</body>
+</html>
