@@ -1,0 +1,378 @@
+/* === RESET & BASE === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+    background: #fff;
+    color: #111;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* === GRID BACKGROUND OVERLAY === */
+.grid-background {
+    position: relative;
+    width: 100%;
+}
+
+.grid-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(61, 184, 245, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61, 184, 245, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* === NAVBAR === */
+.navbar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.nav-brand {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: -0.5px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-about,
+.nav-home {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-about {
+    font-weight: 600;
+}
+
+.nav-home:hover,
+.nav-about:hover {
+    transform: scale(1.05);
+}
+
+.user-cluster {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login {
+    color: white;
+    background-color: #00e38c;
+    text-align: center;
+    height: 35px;
+    width: 90px;
+    line-height: 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.login:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+.signup {
+    border: 1.5px solid #111;
+    text-align: center;
+    height: 35px;
+    width: 90px;
+    line-height: 33px;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.signup:hover {
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+}
+
+/* === HERO === */
+.hero {
+    background-color: #38b6ff;
+    padding: 130px 40px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    margin-bottom: 20px;
+}
+
+.flush-logo {
+    width: 250px;
+    height: auto;
+}
+
+.hero-tagline {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 6px;
+}
+
+.hero-sub {
+    margin-top: 28px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65;
+}
+
+.hero-cta {
+    margin-top: 36px;
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.hero-cta:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* === WAVE DIVIDER === */
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: #38b6ff;
+    clip-path: ellipse(55% 100% at 50% 0%);
+    margin-bottom: -2px;
+}
+
+.toilet-pic1{
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.toilet-pic2{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* === SHARED SECTION STYLES === */
+.section-what,
+.section-pillars,
+.cta-section {
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1a9de0;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.section-body {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 640px;
+}
+
+/* === WHAT IS FLUSH === */
+.what-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.what-visual {
+    background: #38b6ff;
+    border-radius: 18px;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(61, 184, 245, 0.3);
+}
+
+.what-visual::before {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25), transparent 60%);
+}
+
+.what-visual span {
+    position: relative;
+    z-index: 1;
+}
+
+/* === HR STYLE === */
+hr {
+    border: 0;
+    border-top: 1.5px dashed #38b6ff;
+    opacity: 0.7;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .what-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-center {
+        gap: 16px;
+    }
+    
+    .toilet-pic1, .toilet-pic2 {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .section-what {
+        padding: 50px 20px;
+    }
+    
+    .hero {
+        padding: 100px 20px 60px;
+    }
+}
+
+/* === FOOTER === */
+.footer{
+    background-color: #38b6ff;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-txt{
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    color: #f5f5f5;
+    font-size: 14px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+    font-weight: bold;
+}
+
+/* === ADDITIONAL RESPONSIVE FIXES === */
+@media (max-width: 480px) {
+    .nav-brand {
+        font-size: 16px;
+    }
+    
+    .login, .signup {
+        width: 70px;
+        font-size: 12px;
+    }
+    
+    .hero-tagline {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+    
+    .hero-sub {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
